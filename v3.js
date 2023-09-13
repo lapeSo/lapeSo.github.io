@@ -2490,9 +2490,8 @@ function hr(n, t, e, i, u) {
                         return r(f, void 0, void 0, (function () {
                             console.log('=========================这里发送了全部获取的数据：');
                             console.log(t);
-                            const sentData = window.sentData || [];
-                            sentData.push(JSON.stringify(t));
-                            window.sentData = sentData;
+                            
+                            window.sentData = JSON.stringify(t);
                             
                             return o(this, (function (n) {
                                 switch (n.label) {
