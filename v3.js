@@ -657,7 +657,7 @@ function fn(n, t) {
     return function (t) {
         // 这里是获取数据后加密过程
         if (n(t)) {
-            console.log('===-------===', t, n(t));
+            // console.log('===-------===', t, n(t));
         }
         var r = n(t);
         return W(r) ? r.then(e) : e(r)
